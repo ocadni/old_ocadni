@@ -6,9 +6,10 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/profile-ocadni.jpg" title="Profile Picture" class="profile">
 
-About me. Is it essential? I don’t think so…
-
-In questa pagina mi dovrei definire. Una cosa che mi definisce è la mia connaturata incapacità nel farlo. La presa d’atto di quello che si è può essere dolorosa, o comunque limitante, o limitatamente deprimente. E allora non lo faccio. [CV, get the PDF](/assets/doc/CV_IndacoBiazzo.pdf)
-
-[CV]
-
+# About me
+<div class = "text">I'm a physicist, father of two children.
+Sometimes during the day I became a computer scientist, a web developer, a designer, a urbanist, a politician. The last one probably the worst version. 
+I'm the creator and webmaster of the <a href = "citychrone.org">CityChrone</a> project. </div>
+---
+#### [CV, get the PDF](/assets/doc/CV_IndacoBiazzo.pdf)
+#### [CV, get the PDF -- extended version](/assets/doc/CV_IndacoBiazzo.pdf)

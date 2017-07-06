@@ -4,6 +4,9 @@ gems:
   - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-seo-tag
+gems:
+  - jekyll-seo-tag
 
 exclude:
   - "/vendor/"
@@ -13,9 +16,8 @@ title: Indaco Biazzo
 subtitle: "Science, Physics, Cities, Politics ..."
 email: indaco.biazzo@gmail.com
 name: Indaco Biazzo
-description: >
- My personal page, with info and posts.
-# Base URL of site (i.e. /blog). It should always start with a slash,
+description: Indaco Biazzo personal page, with info and posts.
+# Base URL of site (i.e. /blog). It should always start with a slash, 
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/

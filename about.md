@@ -12,4 +12,4 @@ Sometimes during the day I become also a computer scientist, a web developer, a 
 I'm the creator and webmaster of the <a href = "htttp://www.citychrone.org" target="_blank">CityChrone</a> project.</div>
 ---
 #### [CV, get the PDF](/assets/doc/CV_IndacoBiazzo.pdf)
-#### [CV, get the PDF -- extended version](/assets/doc/CV_IndacoBiazzo.pdf)
+#### [CV, get the PDF -- extended version](/assets/doc/CV_IndacoBiazzo_Extended.pdf)

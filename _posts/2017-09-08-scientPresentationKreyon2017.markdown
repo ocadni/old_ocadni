@@ -8,7 +8,8 @@ tags:	Presentation CityChrone
 cover:  "/assets/presentation/kreyon2017/scientific/img/Cohesion.png"
 ---
 
-# Scientific Presentation at Kreyon 2017
+# Scientific Presentation at [Kreyon 2017][kreyon2017]
 The presentation of CityChrone project done by Indaco Biazzo at the Kreyon Conference 2017 is [here][ScientKreyon2017].
 
 [ScientKreyon2017]:      http://ocadni.github.io/assets/presentation/kreyon2017/scientific/index.html
+[kreyon2017]:	http://kreyon.net/kreyonConference/

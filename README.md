@@ -1,2 +1,2 @@
 # Indaco Biazzo home page 
-ocadni.github.io
+http://ocadni.github.io/

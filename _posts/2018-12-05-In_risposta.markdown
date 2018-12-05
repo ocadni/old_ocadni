@@ -28,8 +28,6 @@ Le risposte seguono i punti dell'articolo originale.
  - Perché nessuno protesta (qui sì, sarebbe stato utile fare le barricate) per il raddoppio del tunnel autostradale del frejus: [link][raddoppio].
  - Quaderni osservatorio, con analisi costi e benifici: [link][quaderni].
 
-
-
 [fluxes]: /assets/img/posts/trasporto.jpg
 [avanzamento]: http://www.telt-sas.com/it/home-it/
 [seta]: https://www.lavoce.info/archives/50049/italia-cina-un-treno-non-perdere/

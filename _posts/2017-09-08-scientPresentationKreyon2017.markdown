@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Presentation of Citychrone Project at SmartData"
-date:   2017-12-18 
+date:   2017-12-18
 author: Indaco Biazzo
 categories: Posts
 cover:  "/assets/presentation/kreyon2017/scientific/img/Cohesion.png"

@@ -1,3 +1,7 @@
+---
+main_nav: false
+---
+
 # lipari2017
 
 Presentation of [CityChrone](www.citychrone.org) at [Lipari School on Computational Complex and Social Systems](https://complex.liparischool.it/) by [indaco biazzo](ocadni.github.io)

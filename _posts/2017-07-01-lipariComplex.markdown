@@ -1,5 +1,10 @@
 ---
-main_nav: false
+layout: post
+title:  "Presentation of Citychrone Project at Lipari School"
+date:   2017-07-25
+author: Indaco Biazzo
+categories: Posts
+cover:  "/assets/presentation/kreyon2017/scientific/img/Cohesion.png"
 ---
 
 # lipari2017

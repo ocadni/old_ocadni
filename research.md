@@ -8,11 +8,11 @@ permalink: /research/
 
 ---
 
-My research interests follow several lines. One is related to the so-called Science of City. The accumulation of huge amount of data in the last years allows, nowedays, to base on new quantitative studies the research on one of the most complex system: the urban system.
-Another line of research is on the cross-field interaction between statistical physics of complex systems with inference problems and neural networks. Another line of research is about visualization and presentation of the scientific results: why one really has to write a “manuscript” (format invented in late 16th century) to publish scientific results on {{ site.time | date: '%-d %B %Y' }}?
+My research interests follow several lines. One is related to the so-called Science of City. The accumulation of huge amount of data in the last years allows, nowedays, new quantitative studies on one of the most complex system: the urban system.
+Another line of research is on the cross-field interaction between statistical physics of complex systems, inference problems and neural networks. Another line  is about visualization and presentation of scientific results: why one has to write a “manuscript” (format invented in late 16th century) to publish scientific results on {{ site.time | date: '%-d %B %Y' }}?
 
 ### Science of City.
-In the last years, I studied to quantify the efficiency and quality of public transports in urban systems. The results are shown on <a href="www.citychrone.org" target="_blanck">CityChrone</a> platform. Recently i'm interested in modelling urban displacement in city.
+In the last years, I tried to quantify the efficiency and quality of public transports in urban systems. The results are shown on <a href="www.citychrone.org" target="_blanck">CityChrone</a> platform. Recently i'm interested in modelling urban displacements in city.
 
 ### Statistical physics, optimizations problems.
 I worked for my bachelor and master thesis on statistical mechanics of disorder systems. During my Ph.D I focused my attention on the strong similarity and possible cross-field interaction between statistical physics and optimizations problems in computer science. In particular on belief propagation and linear programming algorithms applied to NP-Hard problems.

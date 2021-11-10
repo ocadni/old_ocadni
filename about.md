@@ -16,4 +16,4 @@ I'm currently a post-doc researcher at the Politecnico of Turin, in the DISAT de
 at <a href="https://smartdata.polito.it/" target="_blank">SmartData@poliTO</a>.
 </div>
 ---
-#### [CV->[PDF]](/assets/doc/CV_Indaco Biazzo.pdf)
+#### [CV->[PDF]](/assets/doc/CV_Indaco_Biazzo.pdf)

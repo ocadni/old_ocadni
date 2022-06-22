@@ -1,118 +1,320 @@
-# External gems
-# See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
-plugins:
-#  - jekyll-archives # Sorry, not GitHub pages friendly!
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-seo-tag
-
-exclude:
-  - "/vendor/"
-
+# -----------------------------------------------------------------------------
 # Site settings
-title: Indaco Biazzo
-subtitle: "Science, Physics, Cities, Politics ..."
+# -----------------------------------------------------------------------------
+
+title: Indaco Biazzo # the website title (if blank, full name will be used instead)
+first_name: Indaco
+middle_name: 
+last_name: Biazzo
 email: indaco.biazzo@gmail.com
-name: Indaco Biazzo
-description: Indaco Biazzo personal page.
-# Base URL of site (i.e. /blog). It should always start with a slash,
-# and never end with a slash. Set it to a blank value if hosting at the
-# root of your server.
-baseurl: "" # the subpath of your site, e.g. /blog/
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  Indaco Biazzo personal page.
+footer_text: > 
+  Indaco Biazzo
+keywords: indaco biazzo citychrone epidemic inference statistical physics neural network public transport # add your own keywords or leave empty
+
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+
 url: "http://indacobiazzo.me" # the base hostname & protocol for your site
-cover: "/assets/potentialpop.png"
-logo: "/assets/iconIB.png"
+baseurl: "" # the subpath of your site, e.g. /blog/
+last_updated: true # set to true if you want to display last updated in the footer
+impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
-# Build settings
+# -----------------------------------------------------------------------------
+# RSS Feed
+# -----------------------------------------------------------------------------
+# will use title and url fields
+# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+
+rss_icon: true
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: true
+
+# Dimensions
+max_width: 800px
+
+# TODO: add layout settings (single page vs. multi-page)
+
+# -----------------------------------------------------------------------------
+# Open Graph & Schema.org
+# -----------------------------------------------------------------------------
+# Display links to the page with a preview object on social media.
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_schema_org: false # Include Schema.org in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: ocadni # your GitHub user name
+gitlab_username: # your GitLab user name
+twitter_username: ocadni # your Twitter handle
+linkedin_username: indacobiazzo # your LinkedIn user name
+scholar_userid: STRrPekAAAAJ # your Google Scholar ID
+orcid_id: # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
+research_gate_profile: # your profile on ResearchGate
+blogger_url: # your blogger URL
+work_url: # work page URL
+keybase_username: # your keybase user name
+wikidata_id: # your wikidata id
+dblp_url: # your DBLP profile url
+stackoverflow_id: #your stackoverflow id
+
+contact_note: >
+
+google_analytics: "UA-130518449-1" # your google-analytics ID (format: UA-XXXXXXXXX)
+google_site_verification:  # your google-site-verification ID (Google Search Console)
+bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
+panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+
+blog_name: blog # blog_name will be displayed in your blog page
+blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_description: Science, Physics, Cities, Politics
+permalink: /blog/:year/:title/
+
+# Pagination
+pagination:
+  enabled: true
+
+# Comments
+disqus_shortname: # put your disqus shortname
+# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
+# External sources.
+# If you have blog posts published on medium.com or other exteranl sources,
+# you can display them in your blog by adding a link to the RSS feed.
+#external_sources:
+#  - name: medium.com
+#    rss_url: https://medium.com/@al-folio/feed
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  presentations:
+    defaults:
+      layout: post
+    output: true
+    permalink: /presentations/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 5
+presentations_limit: 5
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# Markdown and syntax highlight
 markdown: kramdown
-paginate: 5
-paginate_path: "/page:num/"
-inter_post_navigation: false
-highlightjs_theme: "monokai-sublime"
+highlighter: rouge
+highlight_theme_light: github  # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_dark: native  # https://github.com/jwarby/jekyll-pygments-themes
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
 
-# Archive settings (see https://github.com/jekyll/jekyll-archives/)
-#jekyll-archives:
-#  enabled:
-#    - categories
-#    - tags
-#  layout: 'archive'
-#  permalinks:
-#    category: '/category/:name/'
-#    tag: '/tag/:name/'
+# Includes & excludes
+include: ['_pages']
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+  - .git
 
-# Disqus comments
-# disqus_shortname: bencentra
+# Plug-ins
+plugins:
+  - jekyll-archives
+  - jekyll-diagrams
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-imagemagick
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-target-blank
+  - jekyll-twitter-plugin
+  - jemoji
 
-#Google analytics
-ga_tracking_id: "UA-130518449-1"
+# Sitemap settings
+defaults:
+  - scope:
+      path: "assets/**/*.*"
+    values:
+      sitemap: false
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+# -----------------------------------------------------------------------------
+# Jekyll Minifier
+# -----------------------------------------------------------------------------
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+jekyll-minifier:
+  exclude: ['robots.txt']
+  uglifier_args:
+    harmony: true
 
-# Social icons and sharing options
-#
-# Social settings are used in two places:
-# * In the footer, as links to your personal profiles
-# * After each blog post for sharing widgets
-#
-# Example:
-#
-# social:
-#   - name: Twitter                         # Name of the service
-#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
-#     username: "@TheBenCentra"             # (User) Name to display in the footer link
-#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
-#     desc: Follow me on Twitter            # Description to display as link title, etc
-#     share: true                           # Include in the "Share" section of posts
-social:
-  - name: Twitter
-    icon: twitter
-    username: ocadni
-    url: https://twitter.com/ocadni
-    desc: indaco biazzo home page
-    share: true
+# -----------------------------------------------------------------------------
+# Jekyll Archives
+# -----------------------------------------------------------------------------
 
-  - name: Facebook
-    icon: facebook
-    username: indaco
-    url: https://www.facebook.com/indaco
-    desc: indaco biazzo home page
-    share: true
+jekyll-archives:
+  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: '/blog/:year/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
+  permalinks:
+    year: '/presentations/:year/'
+    tag: '/presentations/tag/:name/'
+    category: '/presentations/category/:name/'
 
-  - name: GitHub
-    icon: github
-    username: ocadni
-    url: https://github.com/ocadni
-    desc: Fork me on GitHub
-    share: true
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
 
-  - name: LinkedIn
-    icon: linkedin
-    username: ocadni
-    url: https://www.linkedin.com/in/ocadni/
-    desc: Connect with me on LinkedIn
-    share: true
+scholar:
 
-  - name: Instagram
-    icon: instagram
-    username: ocadni
-    url:
-    desc: Follow me on Instagram
-    share: true
+  last_name: Biazzo
+  first_name: [Indaco]
+
+  style: apa
+  locale: en
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  # Note: if you have latex math in your bibtex, the latex filter
+  # preprocessing may conflict with MathJAX if the latter is enabled.
+  # See https://github.com/alshedivat/al-folio/issues/357.
+  bibtex_filters: [latex, smallcaps, superscript]
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
+
+# -----------------------------------------------------------------------------
+# Responsive WebP Images
+# -----------------------------------------------------------------------------
+
+imagemagick:
+  enabled: true
+  widths:
+    - 480
+    - 800
+    - 1400
+  input_directories:
+    - assets/img/
+  input_formats:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+    - ".tiff"
+  output_formats:
+    webp: "-quality 75%"
+
+# -----------------------------------------------------------------------------
+# Jekyll Diagrams
+# -----------------------------------------------------------------------------
+
+jekyll-diagrams:
+    # configuration, see https://github.com/zhustec/jekyll-diagrams.
+    # feel free to comment out this section if not using jekyll diagrams.
 
 
-# Social sharing protocols
-# These are for automatically generating sharing metadata for FB and Twitter
-# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
-protocols:
-    fb_image: "/assets/img/gram_s.png"
-    fb_image_width: 1000
-    fb_image_height: 1000
-    fb_image_type: "image/png"
+# -----------------------------------------------------------------------------
+# Optional Features
+# -----------------------------------------------------------------------------
 
-    twitter_image: "/assets/presentation/PechaKucha2018/img/Gram.png"
+enable_google_analytics:    true  # enables google analytics
+enable_panelbear_analytics: false  # enables panelbear analytics
+enable_google_verification: false  # enables google site verification
+enable_bing_verification:   false  # enables bing site verification
+enable_masonry:             true   # enables automatic project cards arangement
+enable_math:                true   # enables math typesetting (uses MathJax)
+enable_tooltips:            false  # enables automatic tooltip links generated
+                                   # for each section titles on pages and posts
+enable_darkmode:            true   # enables switching between light/dark modes
+enable_navbar_social:       false  # enables displaying social links in the
+                                   # navbar on the about page
+enable_project_categories:  true   # enables categorization of projects into
+                                   # multiple categories
+enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+
+
+# -----------------------------------------------------------------------------
+# Library versions
+# -----------------------------------------------------------------------------
+
+academicons:
+  version: "1.9.1"
+  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
+bootstrap:
+  version: "4.6.1"
+  integrity:
+    css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
+    js: "sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI="
+fontawesome:
+  version: "5.15.4"
+  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+jquery:
+  version: "3.6.0"
+  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+mathjax:
+  version: "3.2.0"
+masonry:
+  version: "4.2.2"
+  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+mdb:
+  version: "4.20.0"
+  integrity:
+    css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+    js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
+popper:
+  version: "2.11.2"
+  integrity: "sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4="
+medium_zoom:
+  version: "1.0.6"
+  integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="

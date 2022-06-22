@@ -1,0 +1,24 @@
+---
+layout: post
+title:  Presentations of the CityChrone project at the "Scientific event at Kreyon2017"
+date:   2017-09-08 
+author: Indaco Biazzo
+categories: Posts
+cover:  "/assets/presentations/kreyon2017/scientific/img/Cohesion.png"
+---
+
+### Scientific Presentation at [Kreyon 2017][kreyon2017]
+[Slides][ScientKreyon2017] of the presentation of the CityChrone project by Indaco Biazzo at the Kreyon Conference 2017:
+[here][ScientKreyon2017].
+
+ <div class="fake-img l-body">
+  <a href="/assets/presentations/kreyon2017/scientific/index.html" target="_blank">
+    {% include figure.html path="/assets/img/CityChrone_Presentation.png" class="img-fluid rounded z-depth-1" %}
+  </a>
+</div>
+
+
+[image]: http://ocadni.github.io/assets/presentations/kreyon2017/scientific/img/Cohesion.png
+[imagePresentation]: /assets/img/CityChrone_Presentation.png
+[ScientKreyon2017]:      http://ocadni.github.io/assets/presentations/kreyon2017/scientific/index.html
+[kreyon2017]:	http://kreyon.net/kreyonConference/

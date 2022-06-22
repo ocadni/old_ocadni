@@ -1,0 +1,54 @@
+#citychrone {
+  position: relative;
+  width: 90%;
+  height: 700px;
+  padding: 10px;
+  margin: 20px auto;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  -ms-box-sizing:     border-box;
+  -o-box-sizing:      border-box;
+  box-sizing:         border-box;
+}
+
+.ing.present .scaling {
+    -webkit-transform: scale(0.7);
+    -moz-transform:    scale(0.7);
+    -ms-transform:     scale(0.7);
+    -o-transform:      scale(0.7);
+    transform:         scale(0.7);
+
+    -webkit-transition-delay: 0.9s;
+    -moz-transition-delay:    0.9s;
+    -ms-transition-delay:     0.9s;
+    -o-transition-delay:      0.9s;
+    transition-delay:         0.9s;
+}
+
+.ing.present .scalingUp {
+    -webkit-transform: scale(1.2);
+    -moz-transform:    scale(1.2);
+    -ms-transform:     scale(1.2);
+    -o-transform:      scale(1.2);
+    transform:         scale(1.2);
+
+    -webkit-transition-delay: 0.7s;
+    -moz-transition-delay:    0.7s;
+    -ms-transition-delay:     0.7s;
+    -o-transition-delay:      0.7s;
+    transition-delay:         0.7s;
+}
+.ing.present .scalingUpAfter {
+    -webkit-transform: scale(1.2);
+    -moz-transform:    scale(1.2);
+    -ms-transform:     scale(1.2);
+    -o-transform:      scale(1.2);
+    transform:         scale(1.2);
+
+    -webkit-transition-delay: 1.7s;
+    -moz-transition-delay:    1.7s;
+    -ms-transition-delay:     1.7s;
+    -o-transition-delay:      1.7s;
+    transition-delay:         1.7s;
+}

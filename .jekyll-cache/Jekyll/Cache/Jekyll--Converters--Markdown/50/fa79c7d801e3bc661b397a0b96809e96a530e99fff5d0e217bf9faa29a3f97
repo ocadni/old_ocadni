@@ -1,0 +1,23 @@
+I"<h3 id="scientific-presentation-at-kreyon-2017">Scientific Presentation at <a href="http://kreyon.net/kreyonConference/">Kreyon 2017</a></h3>
+<p><a href="http://ocadni.github.io/assets/presentations/kreyon2017/scientific/index.html">Slides</a> of the presentation of the CityChrone project by Indaco Biazzo at the Kreyon Conference 2017:
+<a href="http://ocadni.github.io/assets/presentations/kreyon2017/scientific/index.html">here</a>.</p>
+
+<div class="fake-img l-body">
+  <a href="/assets/presentations/kreyon2017/scientific/index.html" target="_blank">
+    <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/CityChrone_Presentation-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/CityChrone_Presentation-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/CityChrone_Presentation-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/CityChrone_Presentation.png" />
+
+  </picture>
+
+</figure>
+
+  </a>
+</div>
+
+:ET

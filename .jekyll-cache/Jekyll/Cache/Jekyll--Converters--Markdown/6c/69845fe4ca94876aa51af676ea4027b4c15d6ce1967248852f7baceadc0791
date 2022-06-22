@@ -1,0 +1,22 @@
+I"õ<p><a href="/assets/presentations/interactive_storytelling/presentation.html">Slides</a> of the presentation of the CityChrone project by Indaco Biazzo at the Interactive Storytelling course, Universit√† di Torino:
+<a href="/assets/presentations/interactive_storytelling/presentation.html">here</a>.</p>
+
+<div class="fake-img l-body">
+  <a href="/assets/presentations/interactive_storytelling/presentation.html" target="_blank">
+    <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/CityChrone_Presentation-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/CityChrone_Presentation-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/CityChrone_Presentation-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/CityChrone_Presentation.png" />
+
+  </picture>
+
+</figure>
+
+  </a>
+</div>
+
+:ET

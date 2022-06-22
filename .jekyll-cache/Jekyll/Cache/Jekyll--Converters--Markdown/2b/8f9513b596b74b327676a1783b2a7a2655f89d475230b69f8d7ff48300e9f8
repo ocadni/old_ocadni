@@ -1,0 +1,21 @@
+I"<p><a href="http://ocadni.github.io/assets/presentations/fourth_smartData/presentation.html">Slides</a> of the presentation at the University of Havana, Cuba.</p>
+
+<div class="fake-img l-body">
+  <a href="/assets/presentations/2019-02-19 havana/presentation.html" target="_blank">
+    <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/CityChrone_Presentation-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/CityChrone_Presentation-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/CityChrone_Presentation-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/CityChrone_Presentation.png" />
+
+  </picture>
+
+</figure>
+
+  </a>
+</div>
+
+:ET

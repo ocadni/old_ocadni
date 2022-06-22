@@ -1,0 +1,11 @@
+---
+layout: post
+title:  Sustainability and urban mobility at the red bull basement workshop [2021 Turin]
+date:   2021-10-16
+author: Indaco Biazzo
+categories: Posts
+---
+
+Presentation of "sustainability and urban mobility" at [red bull basement workshop](https://www.facebook.com/events/157439499917965/?_rdr)(2021 -- turin italy)
+
+[slide](/assets/presentations/2021-10-16%20Red%20Bull%20talk/slidesmartcities.pptx)

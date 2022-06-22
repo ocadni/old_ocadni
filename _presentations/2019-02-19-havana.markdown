@@ -1,0 +1,19 @@
+---
+layout: post
+title:  Presentation of the citychrone project - Universita de L'havana
+date:   2019-02-19
+author: Indaco Biazzo
+categories: Posts
+cover:  "/assets/presentations/fourth_smartData/img/circularRer.png"
+---
+
+[Slides][PechaKucha2018] of the presentation at the University of Havana, Cuba.
+
+ <div class="fake-img l-body">
+  <a href="/assets/presentations/2019-02-19 havana/presentation.html" target="_blank">
+    {% include figure.html path="/assets/img/CityChrone_Presentation.png" class="img-fluid rounded z-depth-1" %}
+  </a>
+</div>
+
+[imagePresentation]: /assets/img/CityChrone_Presentation.png
+[PechaKucha2018]:      http://ocadni.github.io/assets/presentations/fourth_smartData/presentation.html

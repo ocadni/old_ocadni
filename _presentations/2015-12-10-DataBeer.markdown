@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Presentation of The CityChrone Project at the DataBeers Torino"
+date:   2015-12-10
+author: Indaco Biazzo
+categories: Posts
+cover:  "/assets/presentations/kreyon2017/scientific/img/Cohesion.png"
+---
+
+Presentation of [CityChrone](www.citychrone.org) at the [DataBeers - Torino](https://databeerstorino.tumblr.com/)
+
+[Slides](/assets/presentations/dataBeer2015/index.html)

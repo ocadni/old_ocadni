@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Presentation of Citychrone Project at SmartData Politecnico di Torino"
+date:   2017-12-18
+author: Indaco Biazzo
+categories: Posts
+---
+
+[Slides][smartData2017] of the presentation of the CityChrone project by Indaco Biazzo at SmartData, Politecnico di Torino:
+[here][smartData2017].
+
+
+ <div class="fake-img l-body">
+  <a href="/assets/presentations/smartData2017/index.html" target="_blank">
+    {% include figure.html path="/assets/img/CityChrone_Presentation.png" class="img-fluid rounded z-depth-1" %}
+  </a>
+</div>
+
+
+[image]: http://ocadni.github.io/assets/presentations/kreyon2017/scientific/img/Cohesion.png
+[imagePresentation]: /assets/img/CityChrone_Presentation.png
+[smartData2017]:      http://ocadni.github.io/assets/presentations/smartData2017/index.html
+[SmartData]:	https://smartdata.polito.it/

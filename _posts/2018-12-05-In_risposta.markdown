@@ -7,7 +7,6 @@ categories: Posts
 cover:  "/assets/img/posts/corridoi.png"
 ---
 
-# In risposta a Wu Ming 1
 ### e al suo articolo: <a href="http://www.notav.info/post/8-dicembre-2018-no-tav-contro-lentita-e-lo-stato-di-cose-presente-di-wu-ming-1/" target="_blank">“8 dicembre 2018, No Tav, contro l’Entità e lo stato di cose presente”</a>
 
 Le risposte seguono i punti dell'articolo originale.
@@ -15,7 +14,13 @@ Le risposte seguono i punti dell'articolo originale.
 1. Wu Ming 1 scade, come spesso accade ad ambo le parti, in una scocciante e tediosa delegittimazione delle posizioni diverse dalle proprie. Incapace di descrivere le sfumature e la complessità delle argomentazioni, si comporta come un Travaglio qualsiasi, deridendo l’altro, e facendo trasparire il suo maschilismo appellando le organizzatrici della manifestazione come “indubbiamente più presentabili ed eleganti, le «Madamin del sìTav»”, deleggittimandole. L’unica risposta al primo punto possibile per me è: io non lo faccio. Io non dipingo il movimento NoTav come un covo di bifolchi ingnoranti. O pagati dalla sitaf, l’autostrada della valle. Io ascolto le vostre idee con attenzione.
 2. Non si capisce quale classe sociale voglia contrapporre alla “borghesia”. Vaneggia di una classe borghese a capo del progetto, come se i noTav fossero proletari. Qui si sta parlando di opere pubbliche e di un treno. Cerchiamo di rimanere sul pezzo.
 3. **le bugie dei SiTav** (Qui Wu Ming 1 passa in rassegna quelle che considera le bugie dette dai SiTav. Di seguito le risposte alle risposte alle "bugie SiTav"):
- - **Amici dei TIR**. In tutti i discorsi noTav non si mostra mai il grafico qui sotto. Tra la Francia e l’Italia il 92% delle merci passa su TIR. Molto di più degli altri valichi alpini. Perchè? E’ una cosa buona? Lasciamo le cose così? La linea storica è sottoutilizzata perche assolutamente non adeguata (e non si può [aggiornare][storica]) e non competitiva rispetto al trasporto su gomma.  Lasciando le cose così ci si rassegna ai milioni di TIR sulle nostre strade e nelle valli alpine. Molte informazioni si possono trovare nel [quaderno 11][quaderni] dell’osservatorio, per capire le ragioni di questi dati. [![fluxes]][fluxes].  
+ - **Amici dei TIR**. In tutti i discorsi noTav non si mostra mai il grafico qui sotto. Tra la Francia e l’Italia il 92% delle merci passa su TIR. Molto di più degli altri valichi alpini. Perchè? E’ una cosa buona? Lasciamo le cose così? La linea storica è sottoutilizzata perche assolutamente non adeguata (e non si può [aggiornare][storica]) e non competitiva rispetto al trasporto su gomma.  Lasciando le cose così ci si rassegna ai milioni di TIR sulle nostre strade e nelle valli alpine. Molte informazioni si possono trovare nel [quaderno 11][quaderni] dell’osservatorio, per capire le ragioni di questi dati. 
+ <div class="fake-img l-body">
+  <p>
+  {% include figure.html path="/assets/img/posts/trasporto.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+  </p>
+</div>
+
  - **Ormai si sta facendo!** Sì, basta andare sul sito ufficiale per vedere lo stato di avanzamento lavori: [link][avanzamento]. Siamo al 15%.
  - **Resteremo isolati!** (per Wu Ming 1 è un progetto fantasma, il corridoio mediterraneo non esiste). Diciamo che a ovest di Lione è praticamente finito visto che in Francia e Spagna già esistono le linee. A est, dopo l’Italia, le cose sono più lunghe, ma diciamo che per fare l’alta capacità, essendo pianura, è molto più semplice, bastano piccoli interventi sulle linee storiche di pianura. Inoltre è fondamentale per connettersi alla [via della seta][seta] finanziata a man bassa dalla Cina. Di nuovo, La linea storica non è satura perché non è assolutamente conveniente rispetto al traffico su gomma, come dimostra il grafico sopra (perché non lo citano mai?!).
  - **Torino si è espressa!** ha ragione Wu Ming. Torino non si è espressa. Alla manifestazione SiTav saranno stati molto meno, come in tutte le manifestazioni. Che facciamo, vediamo chi ha la manifestazione più grande, o si fa, per esempio, un referendum (nazionale)?
@@ -29,7 +34,7 @@ Le risposte seguono i punti dell'articolo originale.
  - Quaderni osservatorio, con analisi costi e benifici: [link][quaderni].
 
 A latere i motivi per fare il tunnel:
-- Non costa uno sproposito. Il tunnel di base costa all'Italia intorno ai 3 Miliardi di euro spalmati in 10-15 anni. Una cifra del tutto sostenibile per L'Italia. L'uniono Europea finanzia il 40% dell'opera. Quindi è un ottimo investimento, con un grande ritorno sia economico che infrastrutturale che di efficentamento del sistema per l'Italia.
+- Non costa uno sproposito. Il tunnel di base costa all'Italia intorno ai 3 Miliardi di euro spalmati in 10-15 anni. Una cifra del tutto sostenibile per L'Italia. L'unione Europea finanzia il 40% dell'opera. Quindi è un ottimo investimento, con un grande ritorno sia economico che infrastrutturale che di efficentamento del sistema per l'Italia.
 - Essere più vicini alla Francia e alla Spagna via treno è un'ottima cosa in chiave integrazione europea. Sono ricadute sociali, ma anche economiche.
 - La ferrovia è sia per merci che per passeggeri. (Spesso si legge il contrario)
 - Rende competitivo lo spostamento delle merci su ferro invece che su gomma, togliendo dalle strade milioni di tragitti fatti con i TIR. (Ogni anno passano 40 Milioni di tonnellate di merci tra L'italia e la Francia su TIR. Ogni Tir porta intorno alle 30/40 tonnellate, Sono milioni di viaggi di TIR che attraversano le valli montane e la Liguria).

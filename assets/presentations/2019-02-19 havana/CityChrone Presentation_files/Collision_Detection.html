@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0111)file:///Users/indaco/Google%20Drive/presentazioni/citychrone/2019-02-19%20havana/pages/Collision_Detection.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head><body>
+<script src="./d3(1).js"></script>
+<script>
+
+var width = 300,
+    height = 250;
+
+var nodes = d3.range(50).map(function() { return {radius: Math.random() * 4 + 4}; }),
+    root = nodes[0],
+    color = d3.scale.category10();
+
+root.radius = 0;
+root.fixed = true;
+
+var force = d3.layout.force()
+    .gravity(0.15)
+    .charge(function(d, i) { return i ? 0 : -1000; })
+    .nodes(nodes)
+    .size([width, height]);
+
+force.start();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+svg.selectAll("circle")
+    .data(nodes.slice(1))
+  .enter().append("circle")
+    .attr("r", function(d) { return d.radius; })
+    .style("fill", function(d, i) { return color(i % 3); });
+
+force.on("tick", function(e) {
+  var q = d3.geom.quadtree(nodes),
+      i = 0,
+      n = nodes.length;
+
+  while (++i < n) q.visit(collide(nodes[i]));
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+
+svg.on("mousemove", function() {
+  var p1 = d3.mouse(this);
+  root.px = p1[0];
+  root.py = p1[1];
+  force.resume();
+});
+
+function collide(node) {
+  var r = node.radius + 16,
+      nx1 = node.x - r,
+      nx2 = node.x + r,
+      ny1 = node.y - r,
+      ny2 = node.y + r;
+  return function(quad, x1, y1, x2, y2) {
+    if (quad.point && (quad.point !== node)) {
+      var x = node.x - quad.point.x,
+          y = node.y - quad.point.y,
+          l = Math.sqrt(x * x + y * y),
+          r = node.radius + quad.point.radius;
+      if (l < r) {
+        l = (l - r) / l * .5;
+        node.x -= x *= l;
+        node.y -= y *= l;
+        quad.point.x += x;
+        quad.point.y += y;
+      }
+    }
+    return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+  };
+}
+
+</script><svg width="300" height="250"><circle r="4.2126378613601405" style="fill: rgb(31, 119, 180);"></circle><circle r="4.599832961417985" style="fill: rgb(255, 127, 14);"></circle><circle r="5.812803447221976" style="fill: rgb(44, 160, 44);"></circle><circle r="4.014504109588272" style="fill: rgb(31, 119, 180);"></circle><circle r="5.765459545103408" style="fill: rgb(255, 127, 14);"></circle><circle r="7.710855300410671" style="fill: rgb(44, 160, 44);"></circle><circle r="7.87018414251165" style="fill: rgb(31, 119, 180);"></circle><circle r="4.305416124438199" style="fill: rgb(255, 127, 14);"></circle><circle r="6.999201468719105" style="fill: rgb(44, 160, 44);"></circle><circle r="7.7985112059651" style="fill: rgb(31, 119, 180);"></circle><circle r="6.092359917247331" style="fill: rgb(255, 127, 14);"></circle><circle r="6.8020209179341" style="fill: rgb(44, 160, 44);"></circle><circle r="4.125367758296621" style="fill: rgb(31, 119, 180);"></circle><circle r="4.5149333992066945" style="fill: rgb(255, 127, 14);"></circle><circle r="5.3043954289282675" style="fill: rgb(44, 160, 44);"></circle><circle r="4.68899315519828" style="fill: rgb(31, 119, 180);"></circle><circle r="4.209156248730752" style="fill: rgb(255, 127, 14);"></circle><circle r="4.58149147835226" style="fill: rgb(44, 160, 44);"></circle><circle r="7.354327199927161" style="fill: rgb(31, 119, 180);"></circle><circle r="4.446566073330013" style="fill: rgb(255, 127, 14);"></circle><circle r="6.875857565957058" style="fill: rgb(44, 160, 44);"></circle><circle r="7.543501031253522" style="fill: rgb(31, 119, 180);"></circle><circle r="4.653566097976176" style="fill: rgb(255, 127, 14);"></circle><circle r="6.019992966869139" style="fill: rgb(44, 160, 44);"></circle><circle r="6.4960256650602" style="fill: rgb(31, 119, 180);"></circle><circle r="5.38858855917258" style="fill: rgb(255, 127, 14);"></circle><circle r="5.617559732681741" style="fill: rgb(44, 160, 44);"></circle><circle r="4.0832892545456625" style="fill: rgb(31, 119, 180);"></circle><circle r="4.827450435887128" style="fill: rgb(255, 127, 14);"></circle><circle r="7.20766257665042" style="fill: rgb(44, 160, 44);"></circle><circle r="7.635290654538141" style="fill: rgb(31, 119, 180);"></circle><circle r="4.682962921153064" style="fill: rgb(255, 127, 14);"></circle><circle r="6.695555894858824" style="fill: rgb(44, 160, 44);"></circle><circle r="6.762904748127627" style="fill: rgb(31, 119, 180);"></circle><circle r="4.211657080532591" style="fill: rgb(255, 127, 14);"></circle><circle r="7.110173930107864" style="fill: rgb(44, 160, 44);"></circle><circle r="6.111864234658731" style="fill: rgb(31, 119, 180);"></circle><circle r="7.67571576518148" style="fill: rgb(255, 127, 14);"></circle><circle r="7.135136434226316" style="fill: rgb(44, 160, 44);"></circle><circle r="4.3923813002486884" style="fill: rgb(31, 119, 180);"></circle><circle r="4.930097062577493" style="fill: rgb(255, 127, 14);"></circle><circle r="6.142253241507651" style="fill: rgb(44, 160, 44);"></circle><circle r="6.76255226567383" style="fill: rgb(31, 119, 180);"></circle><circle r="7.4863852988343735" style="fill: rgb(255, 127, 14);"></circle><circle r="5.149089884767825" style="fill: rgb(44, 160, 44);"></circle><circle r="4.856812776037756" style="fill: rgb(31, 119, 180);"></circle><circle r="5.58591847519877" style="fill: rgb(255, 127, 14);"></circle><circle r="6.611217477764152" style="fill: rgb(44, 160, 44);"></circle><circle r="4.892594328628467" style="fill: rgb(31, 119, 180);"></circle></svg></body></html>

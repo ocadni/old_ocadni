@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 *DS_Store
+.jekyll-cache/Jekyll/Cache/*
 .jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910
 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/0b/957225fa6e3a798e4418d810195b34fe0366989a9048d0f2462bc750ec1fda
 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/15/c140e0f9ae14f99df95c57b0cbd7ec4fbc8c9831441508a2c5d37170e291b6
